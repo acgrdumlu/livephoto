@@ -117,15 +117,3 @@ $.widget("custom.livePhoto", {
         }
     }
 });
-
-if ($('.js-product-tile-animated').length) {
-    $('.js-animated-image').each(function () {
-        $(this).animatedImg({
-            allsteps: $(this).data('image-count'),
-            animationrate: $(this).data('animation-rate-desktop'),
-            target: $(this).data('animation-rate-mobile')
-        });
-    })
-}
-
-

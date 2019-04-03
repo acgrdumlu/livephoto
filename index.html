@@ -22,6 +22,28 @@
                 data-image-count="20">
                 <img src="https://storage.googleapis.com/media.msmode.com/Test_Jeans_video/LYD-Iris-Stone-0903.jpg">
             </div>
+            <div class="live-photo"
+                style="background: url('https://storage.googleapis.com/media.msmode.com/spriteTest4.jpg') 0px 0px / cover no-repeat;"
+                data-animation-rate-desktop="50" data-animation-rate-mobile="200"
+                data-stripe-image="https://storage.googleapis.com/media.msmode.com/spriteTest4.jpg"
+                data-image-count="20">
+                <img src="https://storage.googleapis.com/media.msmode.com/Test_Jeans_video/LYD-Iris-Stone-0903.jpg">
+            </div>
+            <div class="live-photo"
+                style="background: url('https://storage.googleapis.com/media.msmode.com/spriteTest4.jpg') 0px 0px / cover no-repeat;"
+                data-animation-rate-desktop="50" data-animation-rate-mobile="200"
+                data-stripe-image="https://storage.googleapis.com/media.msmode.com/spriteTest4.jpg"
+                data-image-count="20">
+                <img src="https://storage.googleapis.com/media.msmode.com/Test_Jeans_video/LYD-Iris-Stone-0903.jpg">
+            </div>
+            <div class="live-photo"
+                style="background: url('https://storage.googleapis.com/media.msmode.com/spriteTest4.jpg') 0px 0px / cover no-repeat;"
+                data-animation-rate-desktop="50" data-animation-rate-mobile="200"
+                data-stripe-image="https://storage.googleapis.com/media.msmode.com/spriteTest4.jpg"
+                data-image-count="20">
+                <img src="https://storage.googleapis.com/media.msmode.com/Test_Jeans_video/LYD-Iris-Stone-0903.jpg">
+            </div>
+
         </div>
     </div>
     <style>
@@ -32,6 +54,7 @@
 
         .live-photo-tile {
             width: 20%;
+            margin: 0 auto;
         }
 
         .live-photo img {
@@ -40,10 +63,12 @@
         }
     </style>
     <script>
-        $('.live-photo').livePhoto({
-            allsteps: $('.live-photo').data('image-count'),
-            animationrate: $('.live-photo').data('animation-rate-desktop'),
-            target: $('.live-photo').data('animation-rate-mobile')
+        $('.live-photo').each(function () {
+            $(this).livePhoto({
+                allsteps: $(this).data('image-count'),
+                animationrate: $(this).data('animation-rate-desktop'),
+                target: $(this).data('animation-rate-mobile')
+            });
         });
     </script>
 </body>
